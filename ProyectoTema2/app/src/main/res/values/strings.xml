@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProyectoTema2</string>
+    <string name="texto_titulo">BopApp</string>
+    <string name="texto_Boton_Login">Iniciar sesión</string>
+</resources>
