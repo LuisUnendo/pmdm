@@ -1,6 +1,8 @@
 package com.luis.proyectotema2;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,18 @@ public class ActivityProfile extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Buscar elemento vista
+        EditText usernameText = findViewById(R.id.editTextUsername);
+
+        // Recuperar datos de la primera actividad
+        String usuario=getIntent().getStringExtra("username");
+        String contraseña= getIntent().getStringExtra("password");
+
+        // Setear dato en editText
+        usernameText.setText(usuario);
+        Log.d("Pass", contraseña);
+
+
     }
 }

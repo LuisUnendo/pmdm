@@ -46,8 +46,14 @@ public class MainActivityLogin extends AppCompatActivity {
 
             // pasar de una actividad a otra
             Intent intent = new Intent(this, ActivityProfile.class);
+
+
             String user = editTextUsuario.getText().toString();
             String pass = editTextPass.getText().toString();
+
+            // Pasar datos a la actividad perfil
+            intent.putExtra("username", user);
+            intent.putExtra("password", pass);
 
             if(user.equals(USER) && pass.equals(PASS)){
                 startActivity(intent);
