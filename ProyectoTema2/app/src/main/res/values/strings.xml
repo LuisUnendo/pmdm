@@ -2,4 +2,9 @@
     <string name="app_name">BopApp</string>
     <string name="texto_titulo">BopApp</string>
     <string name="texto_Boton_Login">Iniciar sesión</string>
+    <string name="buttonNavegador">Abrir Navegador</string>
+    <string name="buttonAlarma">Button</string>
+    <string name="button">POn una alarma\n</string>
+    <string name="buttonGuardar">Guardar</string>
+    <string name="buttonAlarmas">Poner alarma</string>
 </resources>
